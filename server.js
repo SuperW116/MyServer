@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 
 const snsRouter = require('./routes/sns')
 app.use('/sns', snsRouter)
-const port = process.env.port || 3000;
+const port = process.env.port || 80;
 app.listen(port, () => {
     console.log("listening to port: ", port);
 })
