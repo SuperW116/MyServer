@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 function logger(req, res, next) {
+    console.log(req);
     // console.log("type is ", typeof(req.body));
     console.log(req.body);
     console.log("SubscribeURL: \n", req.body.SubscribeURL);
