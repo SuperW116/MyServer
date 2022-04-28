@@ -2,10 +2,9 @@ const express = require("express");
 const router = express.Router();
 
 function logger(req, res, next) {
-    console.log(req);
-    // console.log("type is ", typeof(req.body));
-    console.log(req.body);
-    console.log("SubscribeURL: \n", req.body.SubscribeURL);
+    console.log("logger start")
+    // console.log(req.body);
+    // console.log("SubscribeURL: \n", req.body.SubscribeURL);
     console.log("baseUrl = ", req.baseUrl);
     console.log("path = ", req.path);
     console.log("ip = ", req.ip);

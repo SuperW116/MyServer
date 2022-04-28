@@ -7,7 +7,7 @@ app.use(
     })
 );
 // app.use(express.json());
-app.use(express.json({ type: ['text/*', '*/json'] }));
+app.use(express.json({ type: ['text/*', '*/json', '*/xml'] }));
 
 app.get("/", (req, res) => {
     console.log("hey")
