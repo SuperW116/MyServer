@@ -17,6 +17,7 @@ router.get("/", (req, res) => {
     res.status(200).send("SNS")
 });
 router.post("/", (req, res) => {
+    console.log("SNS Post to /sns")
     res.status(200).send("SNS Post")
 });
 
