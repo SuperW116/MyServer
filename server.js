@@ -6,7 +6,7 @@ app.use(
         extended: true,
     })
 );
-app.use(express.json());
+// app.use(express.json());
 
 app.get("/", (req, res) => {
     console.log("hey")
