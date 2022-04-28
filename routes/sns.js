@@ -11,14 +11,15 @@ function logger(req, res, next) {
     next();
 }
 
-router.use(logger);
+// router.use(logger);
 
 router.get("/", (req, res) => {
     res.status(200).send("SNS")
 });
 router.post("/", (req, res) => {
-    console.log("SNS Post to /sns")
-    res.status(200).send("SNS Post")
+    console.log("SNS publish message to /sns path");
+    console.log(req);
+    res.status(200).send("SNS Post");
 });
 
 module.exports = router
